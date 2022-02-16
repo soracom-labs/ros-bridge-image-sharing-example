@@ -1,0 +1,17 @@
+<div class="grid-container">
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-card class="dashboard-card">
+                <mat-card-header>
+                    <mat-card-title>
+                        Camera1
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="dashboard-card-content">
+                    <p *ngIf="!dataUrl">No Image Published</p>
+                    <img [src]="dataUrl" />
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
